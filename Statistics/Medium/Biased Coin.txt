@@ -1,0 +1,33 @@
+Null Hypothesis (Ho): The coin is fair, which means that the probability of heads is p= 0.5 
+
+Alternative Hypothesis(Ha): The coin is biased, so p is not equal to 0.5
+
+For a fair coin flipped 𝑛 =1000 times, the number of heads follows a binomial distribution:
+E[X] =n*p = 1000 x 0.5 = 500
+
+Standard Deviation: 
+
+sqrt(np(1-p)) = sqrt(1000 x 0.5 x 0.5) = sqrt(250) ~ 15.81
+
+We calculate the Z-score to measure how far the observed result (550 heads) is from the expected 500: 
+
+Z= (Observed - Expected)/ Standard Deviation
+=(550-500)/ 15.81
+~3.16
+
+we are testing for bias in either direction (heads or tails), we consider the two-tailed p-value:
+
+p=2×0.0008=0.0032
+
+Since p=0.0032 is much smaller than 
+0.05, we reject the null hypothesis
+
+Since the probability of obtaining 550 heads (or more extreme results) in a fair coin flip is very low (0.32%), the evidence suggests that the coin is likely biased towards heads.
+
+
+
+
+
+
+
+
