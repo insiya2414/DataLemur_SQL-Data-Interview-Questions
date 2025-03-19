@@ -1,0 +1,11 @@
+Null Hypothesis(Ho) - The coin is fair.
+
+Alternative Hypothesis(Ha)- The coin is biased.
+
+p-value - The probability of observing the results obtained given that the null hypothesis is true.
+
+P(one flip) = 2^1 =2
+
+P(ten flips) = 2^10 =1024
+
+Therefore, the p-value = 10/1024 = 0.0098, and we can reject the null hypothesis at a 0.05 significance level.
