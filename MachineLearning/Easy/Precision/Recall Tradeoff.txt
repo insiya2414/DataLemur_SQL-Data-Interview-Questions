@@ -1,0 +1,14 @@
+True and false positives and negatives are used to calculate several useful metrics for evaluating models. Which evaluation metrics are most meaningful depends on the specific model and the specific task, the cost of different misclassifications, and whether the dataset is balanced or imbalanced.
+
+Precision - is the proportion of all the model's positive classifications that are actually positive.Maximizing this is important since we want our model to be correct when predicting a positive class.
+
+It is the proportion of the positive classifier predictions that were, in fact, positive.
+Formula: TP/(TP+FP)
+​
+Recall -The true positive rate (TPR), or the proportion of all actual positives that were classified correctly as positives. Recall is important to maximize since we want our model to capture all of the positive cases in the relevant universe.
+
+It is the percentage of total positive cases captured. 
+Formula: TP/(TP+FN)
+
+Precision improves as false positives decrease, while recall improves when false negatives decrease.
+Both metrics are relevant in evaluating a classification algorithm, but we need to do that carefully, because a change in one leads to a change in the other, and so maximizing both is not an easy task. The tradeoff between the two metrics arises from what aspect of the problem being analyzed is more important in the context of the classification problem at hand.
