@@ -1,0 +1,10 @@
+Linear regression relies on these key assumptions:
+
+- Linearity – The relationship between the input (X) and output (Y) should be a straight line.
+- Independence – Data points should not influence each other.
+- Homoscedasticity – The spread of errors (differences between actual and predicted values) should be constant.
+- Normality of Residuals – The errors should follow a normal distribution.
+- No Multicollinearity – Predictors should not be highly correlated with each other.
+- No Autocorrelation – Errors should not be dependent on each other (especially in time-series data).
+
+Example: Predicting house prices based on square footage. If larger homes consistently have larger errors or if two predictors (e.g., square footage and number of bedrooms) are too similar, assumptions may be violated.
