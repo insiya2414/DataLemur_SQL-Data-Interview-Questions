@@ -1,0 +1,30 @@
+def k_radius_avg(nums, k):
+    
+    '''
+    Initialize averages array with 
+    -1 (default for invalid ranges)
+    '''
+    averages = [-1] * len(nums)
+    
+    # Total elements in a k-radius subarray
+    k_radius_size = 2 * k + 1
+    
+    # Iterate through the array
+    for i in range(len(nums)):
+        '''
+        Check if there are enough elements to the left 
+        and right of the center
+        '''
+        if i - k >= 0 and i + k < len(nums):
+            current_sum = 0
+            # Iterate over the k-radius subarray
+            for j in range(i - k, i + k + 1):
+                current_sum += nums[j]
+            '''
+            Update the current index's average 
+            with a 2-decimal precision
+            '''
+            averages[i] = round(current_sum / k_radius_size, 2)
+    
+    return averages
+  
